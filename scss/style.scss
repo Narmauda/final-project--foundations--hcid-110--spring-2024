@@ -1,5 +1,6 @@
 @use 'reset' as *;
 @use 'variables' as *;
+@use 'fonts' as *;
 
 html {
   background-image: url("../img/central-city.jpg");
@@ -23,7 +24,7 @@ body {
   left: 20px;
 
   h1 {
-    font: url(/index.html);
+    text-shadow: 4px 4px 4px;
     text-align: center;
     color: $primary-color;
   }
