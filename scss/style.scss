@@ -1,2 +1,17 @@
 @use 'variables' as *;
 @use 'reset' as *;
+
+html {
+  background-image: url("../img/central-city.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+
+}
+
+body {
+  background-color: white;
+  background-size: 90%;
+  background-position: center;
+}
