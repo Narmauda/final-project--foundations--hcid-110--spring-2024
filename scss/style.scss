@@ -91,7 +91,7 @@ body {
   }
 
   #index-image {
-    padding-left: 10%;
+    padding-left: 13%;
     opacity: revert;
 
     @media (min-width: $laptop-width) {
@@ -115,9 +115,12 @@ body {
     }
   }
 
-  h2 {
+  #disclaimer {
     font-size: 10px;
     text-align: center;
-    padding: 5px;
+    color: white;
+    position: relative;
+    top: -6px;
+    left: -168px;
   }
 }
