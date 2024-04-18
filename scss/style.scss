@@ -90,8 +90,8 @@ body {
     padding: 10px;
   }
 
-  img {
-    padding-left: 60px;
+  #index-image {
+    padding-left: 10%;
     opacity: revert;
 
     @media (min-width: $laptop-width) {
@@ -105,12 +105,12 @@ body {
     }
 
     @media (min-width: ($phone-width + 1)) and (max-width: ($tablet-width - 1)) {
-      width: 400px;
+      width: 350px;
       height: 400px;
     }
 
     @media (max-width: $phone-width) {
-      width: 200px;
+      width: 250px;
       height: 200px;
     }
   }
