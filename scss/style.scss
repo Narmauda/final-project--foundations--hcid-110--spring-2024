@@ -45,8 +45,8 @@ body {
 
   .dropdown {
   position: relative;
-  top: -40px;
-  left: 10px;
+  top: 0px;
+  left: 46%;
   display: inline-block;
 }
 
@@ -79,5 +79,19 @@ body {
 p {
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+  @media (max-width: $laptop-width) {
+    width: 900px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 500px;
+  }
+
+  @media (min-width: ($phone-width + 1)) and (max-width: ($tablet-width - 1)) {
+    width: 300px;
+  }
 }
 }
