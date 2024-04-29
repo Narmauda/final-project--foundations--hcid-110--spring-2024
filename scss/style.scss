@@ -165,6 +165,9 @@ body {
       }
 
       @media (min-width: $phone-width) {
+        content: "\A";
+        white-space: pre;
+        display: block;
         padding-bottom: 10px;
         word-wrap: normal;
       }
