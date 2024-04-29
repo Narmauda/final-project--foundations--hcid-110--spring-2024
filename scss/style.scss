@@ -115,7 +115,7 @@ body {
 
   #index-image {
     padding-left: 13%;
-    opacity: revert;
+    opacity: 1;
 
     @media (min-width: $laptop-width) {
       width: 900px;
@@ -163,37 +163,66 @@ body {
         display: block;
         padding-bottom: 5px;
       }
+
       @media (min-width: $phone-width) {
         padding-bottom: 10px;
         word-wrap: normal;
       }
     }
   }
+
   a:visited {
     color: blue;
   }
 
-  .redacted, .redacted:visited {
+  .redacted,
+  .redacted:visited {
     color: red;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
   }
 
-#disclaimer-2 {
-  font-size: 13px;
-  text-align: center;
-  position: relative;
-  left: 30%;
-  width: 5%;
-  word-wrap: break-word;
-  color: #000;
-}
+  #disclaimer-2 {
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    left: 38%;
+    width: 5%;
+    word-wrap: break-word;
+    color: #000;
+  }
 
-.portfolio-images {
-  position: relative;
-  left: 14%;
-  display: block;
-  align-self: center;
-  padding: 5px;
-}
+  .portfolio-images {
+    position: relative;
+    display: block;
+    align-self: center;
+    padding: 5px;
+    left: 14%;
+    width: 80%;
+
+    img {
+      padding-left: 10px;
+      padding-bottom: 20px;
+
+      @media (min-width: $laptop-width) {
+        width: 500px;
+        height: 500px;
+      }
+
+      @media (min-width: $tablet-width) and (max-width: 1023px) {
+        width: 300px;
+        height: 300px;
+      }
+
+      @media (min-width: ($phone-width + 1)) and (max-width: ($tablet-width - 1)) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (max-width: $phone-width) {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
 }
